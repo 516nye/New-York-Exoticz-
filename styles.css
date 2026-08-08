@@ -1,0 +1,94 @@
+
+:root{
+ --bg:#030407;--panel:#080b12;--panel2:#0d111a;--text:#f8f9fb;--muted:#9ca4b3;
+ --pink:#ff2fae;--teal:#15e6db;--purple:#9d5cff;--lime:#c4ff29;--line:#202635;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+a{text-decoration:none;color:inherit}.shell{width:min(1280px,94vw);margin:auto}
+.top{position:sticky;top:0;z-index:100;background:rgba(3,4,7,.88);backdrop-filter:blur(14px);border-bottom:1px solid #151a24}
+.topin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:26px}
+.brand{display:flex;align-items:center;gap:12px}.brand img{width:58px;height:58px;object-fit:cover;border-radius:8px}
+.brand b{font-size:14px;letter-spacing:.08em}.nav{display:flex;gap:19px;font-size:13px;font-weight:800;letter-spacing:.05em}
+.nav a:hover,.nav a.active{color:var(--teal)} .icons{display:flex;gap:13px;color:#cfd4df}
+.kicker{font-size:12px;letter-spacing:.18em;color:var(--teal);font-weight:900;text-transform:uppercase}
+h1,h2,h3{margin-top:0}.display{font-size:clamp(60px,8vw,110px);line-height:.87;letter-spacing:-.055em;text-transform:uppercase}
+.neon-pink{color:var(--pink)}.neon-teal{color:var(--teal)}.neon-lime{color:var(--lime)}.neon-purple{color:var(--purple)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 21px;border:1px solid var(--teal);font-size:13px;font-weight:900;letter-spacing:.05em;text-transform:uppercase}
+.btn.pink{border-color:var(--pink)} .btn.fill{background:var(--teal);color:#00110f}.btn:hover{box-shadow:0 0 24px rgba(21,230,219,.18)}
+.muted{color:var(--muted)} .section{padding:72px 0}.panel{background:linear-gradient(180deg,#0a0d14,#070910);border:1px solid var(--line);border-radius:16px}
+footer{border-top:1px solid #161b24;padding:30px 0;color:#9aa3b2}
+
+/* HOME */
+.homeHero{min-height:82vh;position:relative;overflow:hidden;background:
+linear-gradient(90deg,rgba(1,2,4,.97) 0 39%,rgba(1,2,4,.55) 61%,rgba(1,2,4,.15)),
+radial-gradient(circle at 74% 35%,rgba(255,47,174,.24),transparent 21%),
+radial-gradient(circle at 67% 55%,rgba(21,230,219,.20),transparent 24%),
+linear-gradient(135deg,#050816,#16051d 60%,#02131a)}
+.homeHero:after{content:"NYC";position:absolute;right:4%;top:8%;font-size:34vw;font-weight:1000;color:rgba(255,255,255,.025);line-height:.8}
+.homeGrid{min-height:82vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:46px;position:relative;z-index:2}
+.homeLogo{width:128px;border-radius:14px;margin-bottom:22px}
+.homeCopy p{font-size:18px;line-height:1.55;max-width:540px}.homeActions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.cityStack{height:560px;position:relative}.cityStack:before{content:"";position:absolute;inset:6% 0 0 8%;border-radius:30px;
+background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0)),repeating-linear-gradient(90deg,transparent 0 6%,rgba(21,230,219,.09) 6% 6.6%,transparent 6.6% 13%);
+border:1px solid #1a2432;box-shadow:0 0 80px rgba(157,92,255,.15)}
+.cityStack img{position:absolute;width:68%;right:4%;bottom:0;max-height:500px;object-fit:cover;border-radius:22px;filter:saturate(1.1) contrast(1.06)}
+.route{padding:52px 0 74px}.routeGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.routeCard{min-height:190px;padding:24px;border:1px solid #242b39;border-radius:14px;background:
+linear-gradient(135deg,rgba(21,230,219,.08),transparent 40%),#080b12;display:flex;flex-direction:column;justify-content:flex-end}
+.routeCard:nth-child(2n){background:linear-gradient(135deg,rgba(255,47,174,.09),transparent 44%),#080b12}
+.routeCard strong{font-size:25px;text-transform:uppercase}.routeCard span{margin-top:6px;color:var(--muted)}
+
+/* AVAILABLE */
+.collectionHero{padding:58px 0 35px;background:
+linear-gradient(90deg,#05060a 0 48%,rgba(5,6,10,.4)),radial-gradient(circle at 80% 30%,rgba(157,92,255,.26),transparent 24%),#05060a}
+.collectionHero .heroLine{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:end}
+.collectionHero img{width:100%;height:260px;object-fit:cover;border-radius:18px;border:1px solid #252c3a}
+.shopwrap{display:grid;grid-template-columns:250px 1fr;gap:28px;padding:34px 0 70px}
+.filters{padding:20px;position:sticky;top:96px;height:max-content}.filters h3{font-size:18px}.filterGroup{border-top:1px solid #202532;padding:16px 0}.filterGroup:first-of-type{border-top:0}.filterGroup label{display:block;margin:9px 0;color:#cad0da;font-size:13px}
+.productGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{overflow:hidden}.product img{width:100%;aspect-ratio:1/1;object-fit:cover}.product .body{padding:16px}
+.product .name{font-size:20px;font-weight:900;text-transform:uppercase}.product .morph{color:var(--pink);font-weight:800;font-style:italic}
+.product .meta{display:flex;gap:10px;color:#b9c0cd;font-size:12px;margin:8px 0}.product .price{font-size:21px;color:var(--teal);font-weight:900}
+
+/* PRODUCT */
+.detail{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;padding:38px 0}.galleryMain img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px;border:1px solid #26303d}
+.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}.thumbs img{width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid #252c38;border-radius:8px}
+.detailSide{padding:8px 0}.detailSide .price{font-size:38px;color:var(--teal);font-weight:900}.detailSide .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+.spec{border-top:1px solid #202633;padding:18px 0}.specgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:14px}.specgrid b{color:#eef1f6}.specgrid span{color:#aab2bf}
+.parents{display:grid;grid-template-columns:1fr 1fr;gap:18px}.parents .panel{padding:16px}.parents img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px}
+
+/* CARE HUB */
+.carePage{padding:24px 0 60px}.modebar{display:flex;gap:10px;justify-content:center;margin-bottom:18px}.mode{padding:14px 28px;border:1px solid var(--teal);border-radius:10px;font-weight:900}.mode.advanced{border-color:var(--pink)}
+.careLayout{display:grid;grid-template-columns:190px 1fr 310px;gap:16px}.careMenu{padding:14px}.careMenu a{display:block;padding:13px 12px;border:1px solid #1f2835;margin-bottom:9px;border-radius:8px;font-size:12px;font-weight:800}
+.enclosure{min-height:860px;position:relative;border:1px solid #263440;border-radius:18px;overflow:hidden;
+background:linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.28)),url('gecko-b.jpg') center/cover}
+.enclosure:before{content:"";position:absolute;inset:0;background:
+linear-gradient(90deg,rgba(0,30,22,.20),transparent 28%,rgba(24,0,30,.15)),
+repeating-linear-gradient(180deg,transparent 0 10%,rgba(255,255,255,.015) 10% 10.3%)}
+.hotspot{position:absolute;background:rgba(4,7,10,.82);border:1px solid var(--teal);color:white;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:900;box-shadow:0 0 18px rgba(21,230,219,.14)}
+.hotspot.pink{border-color:var(--pink);box-shadow:0 0 18px rgba(255,47,174,.14)}.hotspot.purple{border-color:var(--purple)}
+.hs1{top:9%;left:37%}.hs2{top:18%;right:8%}.hs3{top:42%;left:10%}.hs4{top:54%;right:9%}.hs5{bottom:22%;left:22%}.hs6{bottom:10%;right:20%}.hs7{top:29%;left:50%}
+.careInfo{padding:22px;height:max-content;position:sticky;top:96px}.careInfo h2{font-size:29px;color:var(--pink)}.careInfo ul{padding-left:18px}.careInfo li{margin:10px 0;color:#cbd1db}
+.plantStrip{display:grid;grid-template-columns:180px repeat(5,1fr);gap:10px;margin-top:18px}.plantTile{padding:12px;border:1px solid #24303b;border-radius:10px;background:#090c12}.plantTile img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px}.plantTile strong{font-size:12px}
+
+/* PROJECTS */
+.projectsHero{padding:46px 0 28px;background:
+linear-gradient(90deg,#06070b,rgba(6,7,11,.55)),radial-gradient(circle at 73% 40%,rgba(157,92,255,.22),transparent 25%),#06070b}
+.projectGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{padding:14px}.pair{display:grid;grid-template-columns:1fr 46px 1fr;gap:8px;align-items:center}.pair img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px}.x{text-align:center;color:var(--pink);font-weight:1000;font-size:28px}
+.status{color:var(--teal);font-size:11px;letter-spacing:.15em;font-weight:900}.timeline{height:4px;background:#1b2130;margin:16px 0;position:relative}.timeline:before{content:"";position:absolute;left:0;top:0;bottom:0;width:48%;background:linear-gradient(90deg,var(--teal),var(--pink))}
+.outcomes{font-size:13px;color:#c6ccd7;line-height:1.7}
+
+/* SOLD */
+.museumHero{padding:80px 0 40px;text-align:center}.museumHero h1{font-size:76px}.museumGrid{columns:3 280px;column-gap:16px}.museumItem{break-inside:avoid;margin-bottom:16px;border:1px solid #232937;border-radius:14px;overflow:hidden;background:#080b11}.museumItem img{width:100%;display:block}.museumItem .body{padding:14px}
+
+/* COMMUNITY */
+.communityHero{min-height:70vh;display:grid;place-items:center;text-align:center;background:
+radial-gradient(circle at 50% 45%,rgba(255,47,174,.17),transparent 26%),radial-gradient(circle at 45% 60%,rgba(21,230,219,.14),transparent 25%),#040509}
+.communityHero .inner{max-width:780px}.communityHero h1{font-size:86px}.communityBlocks{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.communityBlocks .panel{padding:24px;min-height:190px}.communityBlocks h3{font-size:24px}
+
+/* ABOUT & CONTACT */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.story img{width:100%;border-radius:18px}.form{display:grid;gap:12px;max-width:720px}.form input,.form textarea{width:100%;padding:14px;background:#090c12;border:1px solid #27303d;color:white;border-radius:8px}.form textarea{min-height:140px}
+
+@media(max-width:1050px){.careLayout{grid-template-columns:1fr}.careMenu,.careInfo{position:static}.careMenu{display:grid;grid-template-columns:repeat(3,1fr)}.shopwrap{grid-template-columns:1fr}.filters{position:static}.productGrid{grid-template-columns:repeat(2,1fr)}.homeGrid,.collectionHero .heroLine,.detail,.story{grid-template-columns:1fr}.cityStack{height:430px}}
+@media(max-width:720px){.nav{display:none}.routeGrid,.productGrid,.projectGrid,.communityBlocks{grid-template-columns:1fr}.plantStrip{grid-template-columns:1fr 1fr}.careMenu{grid-template-columns:1fr 1fr}.enclosure{min-height:680px}.museumGrid{columns:1}.display{font-size:58px}.communityHero h1{font-size:56px}}
